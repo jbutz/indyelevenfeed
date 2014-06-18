@@ -2,6 +2,7 @@ ENV["RACK_ENV"] ||= "development"
 
 require 'rubygems' unless defined?(Gem)
 require 'bundler/setup'
+require 'net/http'
 Bundler.require(:default, ENV["RACK_ENV"].to_sym)
 DEBUG = true
 
